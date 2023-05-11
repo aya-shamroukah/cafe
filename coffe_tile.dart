@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 class CoffeTile extends StatelessWidget {
 final String coffeeimagepath;
 final String coffeename;
