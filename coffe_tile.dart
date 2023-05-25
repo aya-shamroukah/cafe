@@ -5,7 +5,8 @@ class CoffeTile extends StatelessWidget {
 final String coffeeimagepath;
 final String coffeename;
 final String coffeprice;
-CoffeTile({required this.coffeeimagepath,
+// ignore: use_key_in_widget_constructors
+const CoffeTile({required this.coffeeimagepath,
 required this.coffeename,
 required this.coffeprice});
 
@@ -35,7 +36,6 @@ required this.coffeprice});
                       child: Column(
                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                        // ignore: prefer_const_constructors
                         Text(coffeename,style: TextStyle(fontSize: 20),),
                        const SizedBox(height: 4,),
                       Text('With Almond Milk',style: TextStyle(color: Colors.grey[700]),
@@ -47,6 +47,7 @@ required this.coffeprice});
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children:[
+                      // ignore: prefer_interpolation_to_compose_strings
                       Text("\$  "   +   coffeprice),
                       Container(
                         padding: EdgeInsets.all(2),

@@ -13,6 +13,7 @@ class Coffe extends StatefulWidget {
 }
 
 class _CoffeState extends State<Coffe> {
+  // ignore: non_constant_identifier_names
   final List Coffe_type=[
     ['Latte',true],['Coffee',false],['Cappucino',false],['Tea',false]
   ];
@@ -91,7 +92,7 @@ class _CoffeState extends State<Coffe> {
             //list view of coffee
            SizedBox(height: 25,),
            //list view 
-           Container(height: 50,
+           SizedBox(height: 50,
            child: Expanded(
              child: ListView.builder(
               itemCount: Coffe_type.length,
@@ -105,6 +106,7 @@ class _CoffeState extends State<Coffe> {
                      isSelect: Coffe_type[index][1], 
                      ontap: (){
                       coffetypeselect(index);
+                      // ignore: avoid_print
                       print(index);
                      }),
                      
@@ -117,7 +119,7 @@ class _CoffeState extends State<Coffe> {
            //coffe tile
            Flex(direction: Axis.horizontal,
              children:[ Expanded(
-               child: Container(height:420,
+               child: SizedBox(height:420,
                  child: ListView (
                   scrollDirection: Axis.horizontal,
                   children: [

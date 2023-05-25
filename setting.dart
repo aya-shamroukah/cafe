@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_typing_uninitialized_variables, avoid_print
 
 import 'package:flutter/material.dart';
 class Setting extends StatefulWidget {
@@ -9,7 +9,9 @@ class Setting extends StatefulWidget {
 }
 
 class _SettingState extends State<Setting> {
+    // ignore: unnecessary_new
     GlobalKey<FormState> form = new GlobalKey<FormState>();
+  // ignore: unnecessary_new
   TextEditingController password= new TextEditingController();
 var password1;
   @override

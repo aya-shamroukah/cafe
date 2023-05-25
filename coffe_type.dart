@@ -1,11 +1,13 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
+// ignore: camel_case_types
 class Coffee_type extends StatelessWidget {
   final String coffee_type;
   final bool isSelect;
   final VoidCallback ontap;
-   Coffee_type({
+   // ignore: use_key_in_widget_constructors
+   const Coffee_type({
     required this.coffee_type,
     required this.isSelect,
     required this.ontap
